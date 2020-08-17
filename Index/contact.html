@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href="contact.css" />
+<!-- Code by Deepak Haridas -->
+<script type="text/javascript">
+    function changeBgColor(obj, colorName) {
+            obj.style.backgroundColor = colorName;
+        }
+  </script>
+
+</head>
+<body>
+<div class = "container">
+    
+    <div class="item item1">
+      
+      <div class = "logo">
+        <a href = "index.html"><img src = "img/logo1.png"></a>
+      </div>
+
+      <ul class="nav">
+        <li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="index.html">Home</a></li>
+        <li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="about.html">About</a></li>
+        <li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="services.html">Services</a></li>
+        <li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="#"><b>Contact</b></a></li>
+      </ul>
+    </div>
+    
+<div class = "banner">
+        <img class = "banner-image" src="img/contact.jpg">
+      </div>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="eg: Jon">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="eg: Doe">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">U.S.A</option>
+      <option value="usa">Canada</option>
+    </select>
+
+    <label for="subject">Tell us what you're thinking :)</label>
+    <textarea id="subject" name="subject" placeholder="What would you like to tell us?" style="height:200px"></textarea>
+
+    <input type="submit" value="SUBMIT">
+  </form>
+</div>
+
+</body>
+</html>

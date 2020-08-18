@@ -1,0 +1,117 @@
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Console";
+	width:100vw;
+	--nav-load-time: 700ms;
+}
+
+.logo img{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 25px;
+	width:5%;
+}
+
+.nav {
+	background-color: #FFFFFF;
+	color: #000000;
+	list-style: none;
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+
+.nav > li {
+	display: inline-block;
+	padding: 5 20px 5 20px;
+	font-size: 15px;
+	font-family: "Lucida Console";
+
+}
+
+.nav > li > a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav > li >a:hover {
+	color: #FFFFFF;
+}
+
+.banner {
+	width: 100%;
+	display: block;  
+}
+
+.banner > .banner-image {
+	width: 100%;
+	display: block;  
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr;
+	grid-template-rows: 1fr 1fr 10fr 1fr 1fr;
+	grid-template-areas: 
+		"Header Header Header"
+		"img img img"
+		"Content Content Content"
+		"Footer Footer Footer";
+
+}
+
+.item1 {
+	grid-area: Header;
+	animation: nav-load var(--nav-load-time) ease;
+	animation-fill-mode: forwards;
+}
+
+.item2 {
+	grid-area: img;
+}
+
+.item3 {
+	grid-area: Content;
+	margin: auto;
+	animation: page-load 900ms ease;
+	animation-fill-mode: forwards;
+
+}
+.item4 {
+	grid-area: Footer;
+	color: #FFFFFF;
+	background-color: #ff002a;
+}
+
+.lefta{
+text-align: left;
+justify-content: left;
+}
+
+.righta{
+text-align: right;
+justify-content: right;
+}
+
+@keyframes nav-load{
+	0%{
+		transform: translateY(-100%);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes page-load{
+	0%{
+		transform: translateY(100%);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}

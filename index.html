@@ -1,0 +1,67 @@
+<html>
+<head>
+	<link rel="stylesheet" href="main.css" />
+	<title>Main</title>
+
+	<script type="text/javascript">
+		function changeBgColor(obj, colorName) {
+            obj.style.backgroundColor = colorName;
+        }
+	</script>
+</head>
+
+<body>
+
+	<div class = "container">
+		
+		<div class="item item1">
+			
+			<div class = "logo">
+				<a href = "#"><img src = "img/logo1.png"></a>
+			</div>
+
+			<ul class="nav">
+				<li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="#"><b>Home</b></a></li>
+				<li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="about.html">About</a></li>
+				<li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="services.html">Services</a></li>
+				<li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="contact.html">Contact</a></li>
+				<li onmouseover="changeBgColor(this,'#f6afff')" onmouseout="changeBgColor(this, '#FFFFFF')"><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="item item2">
+
+			<div class = "banner">
+				<img class = "banner-image" src="img/dune1.jpg">
+			</div>
+
+		</div>
+
+		<div class="item item3">
+			
+			<table cellspacing="25px">
+				<tr>
+					<td><img src="img/pencil.jpg" width=100%></td>
+					<td><img src="img/notes.jpg" width=100%></td>
+					<td><img src="img/mac.jpg" width=100%></td>
+				</tr>
+
+				<tr>
+					<td><img src="img/travel.jpg" width=100%></td>
+					<td><img src="img/ipad.jpg" width=100%></td>
+					<td><img src="img/camera.jpg" width=100%></td>
+				</tr>
+			</table>
+
+			<!-- Code by Deepak Haridas -->
+		</div>
+
+		<div class="item item4">
+			<a href="about.html"><img src = "img/work1.jpg" width="100%"></a>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
